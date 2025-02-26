@@ -3,7 +3,9 @@
 ----------------------------------------------------------------------------*/
 html {
     box-sizing: border-box;
-    font-size: 62.5%
+    font-size: 62.5%;
+
+    position: relative;
 }
 
 *,
@@ -40,8 +42,25 @@ a {
 header{
     width: 1000px;
     background-color: rgba(15, 38, 49, 0.95);
+
     position: fixed;
+    text-align: center;
+    left: calc(50% - 500px);
+    top: 0;
+
+    border-radius: 0px 0px 20px 20px;
+
+    z-index: 100;
+}
+
+h1{
+    font-size: 4rem;
 
     display: flex;
-    justify-content: calc(50%-500px);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 .wrapper{
+    width: 80px;
 }
