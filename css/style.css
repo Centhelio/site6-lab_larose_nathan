@@ -42,7 +42,6 @@ header{
     background-color: rgba(15, 38, 49, 0.95);
 
     position: fixed;
-    text-align: center;
     left: calc(50% - 500px);
     top: 0;
 
@@ -52,15 +51,14 @@ header{
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
+    height: 80px;
+
+    margin: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1 .wrapper{
-    width: 80px;
 }
 
 .contenu{
@@ -132,6 +130,8 @@ footer p{
     height: 75px;
 
     font-size: 1.6rem;
+
+    margin-bottom: 0;
 }
 
 footer .wrapper{
@@ -167,4 +167,39 @@ footer .wrapper{
 .media ul img:hover{
     position: relative;
     left: 3px;
+}
+
+img.zoom{
+    display: flex;
+
+    width: 800px;
+    height: 600px;
+
+    cursor: pointer;
+
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 200;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modale.visible{
+    display: flex;
 }
