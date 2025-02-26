@@ -4,8 +4,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-
-    position: relative;
 }
 
 *,
@@ -54,7 +52,7 @@ header{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
 
     display: flex;
     justify-content: center;
@@ -63,4 +61,81 @@ h1{
 
 h1 .wrapper{
     width: 80px;
+}
+
+.contenu{
+    max-width: 925px;
+    margin: 100px auto 0px auto;
+}
+
+.contenu img{
+    width: 100%;
+}
+
+.contenu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+
+    margin-bottom: 0;
+    padding: 0;
+
+    list-style: none;
+}   
+
+
+.contenu .wrapper li{
+    position: relative;
+
+    padding: 20px;
+
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+}
+
+
+.contenu .bouton{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    right: 20px;
+    top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 0 0 0 5px;
+}
+
+
+.contenu .bouton:hover{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 0 0 0 5px;
+
+    cursor: pointer;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 75px;
+
+    font-size: 1.6rem;
+}
+
+footer .wrapper{
+    background-color: rgba(15, 38, 49, 0.95);
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
 }
