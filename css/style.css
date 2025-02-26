@@ -1,0 +1,47 @@
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+
+    color: #eca136;
+    background-color: rgb(9, 26, 33);
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1000px;
+    background-color: rgba(15, 38, 49, 0.95);
+    position: fixed;
+
+    display: flex;
+    justify-content: calc(50%-500px);
+}
